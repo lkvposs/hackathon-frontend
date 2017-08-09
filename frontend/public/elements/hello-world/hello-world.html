@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!--
+`hello-world`
+
+
+@demo demo/index.html
+-->
+
+<dom-module id="hello-world">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+    <h3>You just unlocked a polymer component!!!</h3>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'hello-world',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'World',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

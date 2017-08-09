@@ -1,0 +1,18 @@
+<div>
+<table id="contacts" class="table">
+  <thead>
+      <tr>
+        <th>Contact Id</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Photo</th>
+      </tr>
+    </thead>
+  <tr ng-repeat="contact in contactData">
+    <td>{{contact.id}}</td>
+    <td>{{contact.name}}</td>
+    <td>{{contact.phone}}</td>
+    <td><img ng-src='{{contact.img}}'></td>
+  </tr>
+</table>
+</div>
